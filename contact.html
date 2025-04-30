@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="discription" content="The Fast Food Shop Contact Us">    
+    <meta name="author" content="Mustafa">
+    <title>Contact FFS</title>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__h1">Fast Food Shop</h1>
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="index.html#menu">Menu</a>
+                </li>
+                <li>
+                    <a href="hours.html">Hours</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <figure>
+            <img src="img/contact_page.jpeg" alt ="Little Fast Food Shop" width="2000" height="1335" title="Fast Food ready to eat!">
+            <figcaption class="offscreen">
+                Little Fast Food Shop
+            </figcaption>
+        </figure>
+    </div>
+
+    <main class="main">
+        <article class="main__article">
+            <h2>Our Location</h2>
+            <address>400 E Hillsdale Blvd, Apt 304<br>
+            San Mateo, Ca 94403
+            <br><br>
+            Phone: <a href="tel=+6666666666">666 - 666 - 6666</a>
+            </address>
+        </article>
+        <hr>
+        <article class="main__article contact">
+            <h2 class="contact__h2">Our Contact Form</h2>
+
+            <form action="pages.php" method="get" class="contact__form">
+                <fieldset class="contact__fieldset">
+                    <legend class="offscreen">Send Us a Massage</legend>
+                <p class="contact__p">
+                    <label class="contact__label" for="name">Name:</label>
+                    <input class="contact__input" type="text" name="name" id="name" placeholder="Your Name" required>
+                </p>
+                <p class="contact__p">
+                    <label class="contact__label" for="email">Email:</label>
+                    <input class="contact__input" type="email" name="email" id="email" placeholder="Your Email" required>
+                </p>
+                <p class="contact__p">
+                    <label class="conttact__label" for="Massage">Massage:</label>
+                    <textarea class="contact__textarea" name="Massage" id="Massage" cols="30" rows="10" placeholder="Type Your Massage Here:"></textarea>
+
+                </p>
+            </fieldset>
+            <button class="contact__button" type="submit">Send</button>
+            <button class="contact__button" type="reset">Reset</button>
+            </form>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <p >
+            <span class="nowrap">Copyright &copy;</span>
+            <span class="nowrap"> Little Fast Food Shop</span>
+        </p>
+    </footer>
+</body>
+</html>
